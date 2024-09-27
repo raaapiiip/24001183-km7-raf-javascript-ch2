@@ -1,52 +1,82 @@
 class Car {
-  static list = [];
+    static list = [];
 
-  static init(cars) {
-    this.list = cars.map((i) => new this(i));
-  }
+    static init(cars) {
+        this.list = cars.map((i) => new this(i));
+    }
 
-  constructor({
-    id,
-    plate,
-    manufacture,
-    model,
-    image,
-    rentPerDay,
-    capacity,
-    description,
-    transmission,
-    available,
-    type,
-    year,
-    options,
-    specs,
-    availableAt,
-  }) {
-    this.id = id;
-    this.plate = plate;
-    this.manufacture = manufacture;
-    this.model = model;
-    this.image = image;
-    this.rentPerDay = rentPerDay;
-    this.capacity = capacity;
-    this.description = description;
-    this.transmission = transmission;
-    this.available = available;
-    this.type = type;
-    this.year = year;
-    this.options = options;
-    this.specs = specs;
-    this.availableAt = availableAt;
-  }
+    constructor({
+        id,
+        plate,
+        manufacture,
+        model,
+        image,
+        rentPerDay,
+        capacity,
+        description,
+        transmission,
+        available,
+        type,
+        year,
+        options,
+        specs,
+        availableAt,
+    }) {
+        this.id = id;
+        this.plate = plate;
+        this.manufacture = manufacture;
+        this.model = model;
+        this.image = image;
+        this.rentPerDay = rentPerDay;
+        this.capacity = capacity;
+        this.description = description;
+        this.transmission = transmission;
+        this.available = available;
+        this.type = type;
+        this.year = year;
+        this.options = options;
+        this.specs = specs;
+        this.availableAt = availableAt;
+    }
 
-  render() {
-    return `
-      <p>id: <b>${this.id}</b></p>
-      <p>plate: <b>${this.plate}</b></p>
-      <p>manufacture: <b>${this.manufacture}</b></p>
-      <p>model: <b>${this.model}</b></p>
-      <p>available at: <b>${this.availableAt}</b></p>
-      <img src="${this.image}" alt="${this.manufacture}" width="64px">
+    render() {
+        return `
+
+        <div class="card px-2 py-4">
+            <img src="${this.image}" class="card-img-top mt-4">
+            <div class="card-body">
+                <h5 class="card-title fs-6">${this.manufacture}/${this.model}</h5>
+                <h5 class="card-title fs-5 fw-bold">Rp ${this.rentPerDay} / hari</h5>
+                <p class="cars-text">${this.description}</p>
+                <div class="row">
+                    <div class="col-1">
+                        <img src="../public/images/fi_users2.svg" width="20px" alt="" srcset="">
+                    </div>
+                    <div class="col-10 ms-lg-2">
+                        ${this.capacity} orang
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-1">
+                        <img src="../public/images/fi_settings.svg" width="20px" alt="" srcset="">
+                    </div>
+                    <div class="col-10 ms-lg-2">
+                        ${this.transmission}
+                    </div>
+                </div>
+                <div class="row mt-2 mb-4">
+                    <div class="col-1">
+                        <img src="../public/images/fi_calendar2.svg" width="20px" alt="" srcset="">
+                    </div>
+                    <div class="col-10 ms-lg-2">
+                        Tahun ${this.year}
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-green" style="width:100%">Go somewhere</a>
+            </div>
+        </div>
+  
     `;
-  }
+    }
 }

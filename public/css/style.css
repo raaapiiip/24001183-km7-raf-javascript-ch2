@@ -1,0 +1,445 @@
+/* VARIABLES */
+:root {
+    --light-primary-color: #FFFFFF;
+    --light-secondary-color: #F1F3FF;
+    --dark-color: #000000;
+    --blue-color: #0D28A6;
+    --green-color: #5CB85F;
+
+    --font-size-36: 36px;
+    --font-size-24: 24px;
+    --font-size-16: 16px;
+    --font-size-14: 14px;
+}
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* GLOBAL CSS */
+li {
+    margin: 15px;
+}
+
+.text-black {
+    color: var(--dark-color);
+}
+
+.text-white {
+    color: var(--light-primary-color);
+}
+
+.fs-36 {
+    font-size: var(--font-size-36);
+    font-weight: 700;
+    line-height: 54px;
+    text-decoration: none;
+}
+
+.fs-24 {
+    font-size: var(--font-size-24);
+    font-weight: 700;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+.fs-16 {
+    font-size: var(--font-size-16);
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.fs-14 {
+    font-size: var(--font-size-14);
+    font-weight: 300;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.light-secondary-bg {
+    background-color: var(--light-secondary-color);
+}
+
+.blue-bg {
+    background-color: var(--blue-color);
+}
+
+.btn-green {
+    background-color: var(--green-color);
+    color: var(--light-primary-color);
+    border-radius: 2px;
+    border: 1px solid var(--green-color);
+    padding: 8px;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.btn-green:hover {
+    background-color: var(--light-primary-color);
+    color: var(--green-color);
+    border-radius: 2px;
+    border: 1px solid var(--green-color);
+    padding: 8px;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* CSS PER SECTION */
+
+/* NAVBAR */
+.nav-link {
+    margin-right: 9px;
+}
+
+.btn-register {
+    width: 81px;
+    height: 36px;
+}
+
+/* MAIN MENU */
+.main-menu-adjust {
+    height: 404px;
+    align-items: center;
+}
+
+.main-menu-content {
+    padding-right: 100px;
+}
+
+.btn-rent {
+    width: 140px;
+    height: 36px;
+}
+
+.img-car {
+    max-width: 100%;
+    height: auto;
+}
+
+/* SEARCH CAR */
+.search-car {
+    margin-top: -50px;
+}
+
+.search-card {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.search-card .search-time .form-select {
+    background-image: url("../images/fi_clock.svg");
+    background-size: 20px auto;
+}
+
+.search-card .form-select:hover {
+    border: 1px solid #5CB85F;
+    border-radius: 2px;
+}
+
+.search-card .form-select option:hover, .search-card .form-select option:checked {
+    background: #C9E7CA;
+    color: #5CB85F;
+}
+
+/* CAR LIST */
+.cars-list {
+    margin-top: 30px;
+}
+
+.cars-list .card {
+    width: 340px;
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.cars-list .card .card-img-top {
+    width: 320px;
+    height: 180px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.cars-list .card .cars-text {
+    font-size: 14px;
+    line-height: 20px;
+    height: 100px;
+}
+
+/* OUR SERVICE */
+#our-service {
+    margin-top: 100px;
+}
+
+.img-girl {
+    max-width: 100%;
+    height: auto;
+}
+
+.our-service-list ul li {
+    gap: 16px;
+    display: flex;
+}
+
+/* WHY US */
+#why-us {
+    margin-top: 100px;
+}
+
+section .why-us-box {
+    margin-top: 40px;
+}
+
+section .card {
+    border-radius: 8px;
+}
+
+.why-us-card {
+    min-width: 268px !important;
+    height: 196px !important;
+}
+
+/* TESTIMONIAL */
+#testimonial {
+    margin-top: 100px;
+}
+
+section .carousel-control-prev-icon {
+    background-image: url(../images/left_button.svg);
+    width: 56.77px;
+    height: 68px;
+}
+
+section .carousel-control-next-icon {
+    background-image: url(../images/right_button.svg);
+    width: 56.77px;
+    height: 68px;
+}
+
+.testimonial-content {
+    margin-bottom: 40px;
+}
+
+.img-profile {
+    float: left;
+    padding-right: 40.38px;
+}
+
+.testimonial-rate {
+    margin: 8px 0;
+}
+
+.carousel-style {
+    max-width: 832px;
+    max-height: 270px;
+    margin: 0 auto;
+    background-color: #F1F3FF;
+    border-radius: 8px;
+}
+
+.carousel-item {
+    max-width: 832px;
+    min-height: 270px;
+}
+
+.carousel-content {
+    padding: 55px 124.41px 55px 132px;
+}
+
+/* GET STARTED */
+#get-started {
+    margin-top: 100px;
+}
+
+.get-started-adjust {
+    border-radius: 13px;
+    padding: 64px 0;
+}
+
+.get-started-button-p {
+    padding-top: 58px;
+}
+
+.btn-rent {
+    width: 140px;
+    height: 36px;
+}
+
+/* FAQ */
+#faq {
+    margin-top: 100px;
+}
+
+.faq-accordion {
+    border: 1px solid #D4D4D4;
+    border-radius: 4px !important;
+}
+
+.accordion-button.collapsed {
+    border: 1px solid #D4D4D4;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../images/fi_chevron-down.svg") !important;
+}
+
+.accordion-button::after {
+    background-image: url("../images/fi_chevron-down.svg") !important;
+}
+
+/* FOOTER */
+#footer {
+    margin-top: 100px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 766px) {
+
+    /* GLOBAL CSS */
+    .container {
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+    }
+
+    /* CSS PER SECTION */
+    /* NAVBAR */
+    .nav-link {
+        margin: 15px 0;
+    }
+
+    /* MAIN MENU */
+    .main-menu-padding {
+        padding-top: 32px;
+    }
+
+    .main-menu-adjust {
+        height: auto;
+    }
+
+    /* OUR SERVICE */
+    #our-service {
+        margin-top: 60px;
+    }
+
+    .img-girl {
+        width: 252px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* WHY US */
+    #why-us {
+        margin-top: 60px;
+    }
+
+    section .why-us-box {
+        margin-top: 0px !important;
+    }
+
+    section .why-us-section {
+        padding-bottom: 16px;
+    }
+
+    .why-us-text {
+        text-align: center;
+    }
+
+    /* TESTIMONIAL */
+    #testimonial {
+        margin-top: 60px;
+    }
+
+    .testimonial-content {
+        margin-bottom: 16px;
+    }
+
+    .img-profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial-rate {
+        text-align: center;
+        margin: 24px 0;
+    }
+
+    .carousel-style {
+        max-width: 328px;
+        max-height: 392px;
+    }
+
+    .carousel-content {
+        padding: 40px 32px 40px 32px;
+    }
+
+    .custom-prev {
+        position: absolute;
+        top: 50%;
+        left: -50px;
+        transform: translateY(-30%);
+    }
+
+    .custom-next {
+        position: absolute;
+        top: 50%;
+        right: -50px;
+        transform: translateY(-30%);
+    }
+
+
+    /* GET STARTED */
+    #get-started {
+        margin-top: 60px;
+    }
+
+    .get-started-padding {
+        padding: 0 16px;
+    }
+
+    .get-started-text-p {
+        padding: 0 58px;
+    }
+
+    .get-started-button-p {
+        padding-top: 28px !important;
+    }
+
+    /* FAQ */
+    #faq {
+        margin-top: 60px;
+    }
+
+    .faq-text {
+        text-align: center;
+    }
+
+    /* FOOTER */
+    #footer {
+        margin-top: 60px;
+    }
+
+    .footer-text-padding {
+        padding-right: 60px;
+    }
+
+    .footer-logo-padding {
+        padding-bottom: 60px;
+    }
+}
