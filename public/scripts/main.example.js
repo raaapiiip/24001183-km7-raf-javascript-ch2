@@ -19,4 +19,4 @@ app.loadButton.addEventListener('click', () => {
     app.loadFilter().then(app.run());
 })
 
-app.init();
+app.init().then(app.run);

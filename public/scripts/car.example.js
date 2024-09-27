@@ -73,7 +73,7 @@ class Car {
                     </div>
                 </div>
 
-                <a href="#" class="btn btn-green" style="width:100%">Go somewhere</a>
+                <a href="#" class="btn btn-green" style="width:100%">Pilih Mobil</a>
             </div>
         </div>
   

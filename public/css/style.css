@@ -390,16 +390,10 @@ section .carousel-control-next-icon {
     }
 
     .custom-prev {
-        position: absolute;
-        top: 50%;
-        left: -50px;
         transform: translateY(-30%);
     }
 
     .custom-next {
-        position: absolute;
-        top: 50%;
-        right: -50px;
         transform: translateY(-30%);
     }
 

@@ -1,19 +1,35 @@
 class App {
   constructor() {
-    this.clearButton = document.getElementById("clear-btn");
+    // this.clearButton = document.getElementById("clear-btn");
     this.loadButton = document.getElementById("load-btn");
     this.carContainerElement = document.getElementById("cars-container");
     this.driverType = document.getElementById("driverType")
     this.dateOption = document.getElementById("dateOption")
     this.pickupTime = document.getElementById("pickupTime")
     this.passengerCount = document.getElementById("passengerCount")
+    this.loadButton.disabled = true;
   }
 
   async init() {
-    await this.load();
-    this.clearButton.onclick = this.clear;
+    await this.load()
     this.loadButton.onclick = this.run;
+    // this.clearButton.onclick = this.clear;
+    this.driverType.onchange = this.checkMandatoryFields;
+    this.dateOption.oninput = this.checkMandatoryFields;
+    this.pickupTime.oninput = this.checkMandatoryFields;
   }
+
+  checkMandatoryFields = () => {
+    if (
+      this.driverType.value !== 'default' &&
+      this.dateOption.value !== '' &&
+      this.pickupTime.value !== ''
+    ) {
+      this.loadButton.disabled = false;
+    } else {
+      this.loadButton.disabled = true;
+    }
+  };
 
   run = () => {
     Car.list.forEach((car) => {
@@ -53,8 +69,8 @@ class App {
       }
 
     });
-    console.log(cars)
     Car.init(cars);
+    console.log(cars)
   }
 
   clear = () => {
